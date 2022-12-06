@@ -5,7 +5,7 @@
                 Adicionar novo usuário
         </div>
         <div class="card-body">
-            <form action="{{ url('user') }}" method='POST'>
+            <form action="{{ url('users') }}" method='POST'>
                     {!! csrf_field() !!}
                     <div>
                         <label for='name'>Name</label>
@@ -14,6 +14,10 @@
                     <div>
                         <label for='email'>Email</label>
                         <input type="email" name='email' id='email' class='form-control'>
+                    </div>
+                    <div>
+                        <label for='password'>Senha</label>
+                        <input type="password" name='password' id='password' class='form-control'>
                     </div>
 
                     <input type="submit" value="Adicionar" class='btn btn-success'>

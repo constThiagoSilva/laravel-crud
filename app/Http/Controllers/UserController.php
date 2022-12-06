@@ -16,7 +16,7 @@ class UserController extends Controller
     {
         $users = User::all();
 
-        return view ('users.user')->with('users', $users);
+        return view ('users.index')->with('users', $users);
     }
 
     /**
@@ -41,7 +41,7 @@ class UserController extends Controller
 
         User::create($input);
 
-        return redirect('user')->with('flash_message', 'Usuário adicionado');
+        return redirect('users')->with('flash_message', 'Usuário adicionado');
     }
 
     /**
