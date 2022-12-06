@@ -1,4 +1,4 @@
-@extends('user.layout')
+@extends('users.layout')
 @section('content')
     <div class="container">
         <div class="row">
