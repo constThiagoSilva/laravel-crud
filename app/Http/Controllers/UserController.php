@@ -37,7 +37,11 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+
+        User::create($input);
+
+        return redirect('user')->with('flash_message', 'Usuário adicionado');
     }
 
     /**
