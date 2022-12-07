@@ -32,7 +32,7 @@
                                     <a href="{{ url('/users/' . $user->id) }}" title='view-user'><button class="btn btn-info btn-sm">Ver</button></a>
                                     <a href="{{ url('/users/' . $user->id . '/edit') }}" title='edit-user'><button class="btn btn-primary btn-sm">Editar</button></a>
 
-                                    <form action="{{ url('users/' . $user->id) }}" method='POST'>
+                                    <form action="{{ url('users/' . $user->id) }}" method='POST' style='display:inline'>
                                         {{ method_field('DELETE') }}
                                         {{ csrf_field() }}
                                         <button  type='submit' class="btn-danger btn-sm" onclick="return confirm('Tem certeza?')">Excluir</button>
