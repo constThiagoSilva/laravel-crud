@@ -29,7 +29,7 @@
                                 <td>{{ $user->name }}</td>
                                 <td>{{ $user->email }}</td>
                                 <td>
-                                    <a href="" title='view-user'><button class="btn btn-info btn-sm">Ver</button></a>
+                                    <a href="{{ url('/users/' . $user->id) }}" title='view-user'><button class="btn btn-info btn-sm">Ver</button></a>
                                     <a href="" title='edit-user'><button class="btn btn-primary btn-sm">Editar</button></a>
                                     <a href="" title='delete-user'><button class="btn-danger btn-sm">Excluir</button></a>
                                 </td>
