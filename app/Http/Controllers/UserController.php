@@ -95,6 +95,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        User::destroy($id);
+
+        return redirect('users')->with('flash_message', 'Usuário excluído');
     }
 }
